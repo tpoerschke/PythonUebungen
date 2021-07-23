@@ -1,0 +1,60 @@
+\input{../latex-templates/head.tex}
+
+% Metainformationen
+\title{Erste Schritte}
+
+\ihead{}
+\chead{}
+\ohead{}
+\ifoot{}
+\cfoot{\pagemark}
+\ofoot{}
+
+\input{../latex-templates/ownCommands.tex}
+
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0em}
+\renewcommand{\baselinestretch}{1.15}
+
+\begin{document}
+
+\docheader
+
+\section{Variablen}
+
+Schreiben Sie ein Python-Programm, welches vier Variablen enthält: 
+
+\vspace{1em}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|l|l|}
+\hline
+Variable & Wert \\
+\hline
+a & \code{"Hallo Welt!"} \\[-0.5em]
+b & \code{42} \\[-0.5em]
+c & \code{3.14} \\[-0.5em]
+d & \code{'x'} \\
+\hline
+\end{tabular}
+\vspace{1em}
+
+Das Programm soll die Variablen ausgeben. Und: Welche Datentypen besitzen die Variablen?
+
+Die Lösung finden Sie in der Datei \code{1\_Variablen.py}.
+
+
+\section{Operatoren}
+
+Schreiben Sie ein weiteres Programm. Das Programm soll wieder vier Variablen enthalten. Die erste beinhaltet "`Ottostraße"', die zweite "`29"' (als Integer), die dritte "`44867"' (als Integer) und die letzte "Bochum". Konkatenieren Sie die Variablen so, dass Sie folgende Ausgabe in der Konsole erhalten: \code{Ottostraße 29, 44867 Bochum}
+
+Definieren Sie nun eine weitere Variablen mit den Werten 128 (\code{x}) und 16 (\code{y}). Inkrementieren Sie den Wert von y um 1. Führen Sie nun eine ganzzahlige Division durch, wobei \code{x} der Dividend und \code{y} der Divisor ist. Speichern Sie das Ergebnis in einer Variable. Schreiben Sie auch den Divisionsrest in eine Variable. Geben Sie die beiden Ergebnisse in der Konsole aus. 
+
+Die Lösung finden Sie in der Datei \code{2\_Operatoren.py}.
+
+\section{Was ist die Ausgabe?}
+
+\lstinputlisting{../../01_ErsteSchritte/3_Ausgabe.py}
+
+Was wird dieses Programm ausgeben? Versuchen Sie die Ausgabe herauszufinden, ohne das Skript auszuführen. Um Ihr Ergebnis zu prüfen, können Sie das Programm mit dem Befehl \code{python 3\_Ausgabe.py} ausführen.
+
+\end{document}

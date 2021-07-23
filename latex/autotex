@@ -1,0 +1,39 @@
+#!/usr/bin/python3
+
+import argparse
+import os
+import stat
+import time
+
+parser = argparse.ArgumentParser(description='Execute PDFLaTeX and show generated PDF on file save.')
+parser.add_argument('file', type=str, help='tex file')
+parser.add_argument('--dir', type=str, required=False, default=".", help='subdir of the file')
+
+args = parser.parse_args()
+file_path = os.path.join(args.dir, args.file)
+
+if not os.path.isfile(file_path):
+    print("File not found!")
+    exit()
+
+work_dir_root = os.path.abspath(os.path.join(os.getcwd(), ".."))
+output_dir = os.path.join(work_dir_root, args.dir) 
+pdf_filename = args.file[0:-4] + ".pdf"
+output_filepath = os.path.join(output_dir, pdf_filename) 
+
+last_modified = 0
+
+while(True):
+
+    st = os.stat(file_path)
+    if last_modified < st[stat.ST_MTIME]:
+        last_modified = st[stat.ST_MTIME]
+        print("=== PDFLATEX ===")
+        os.system(f"cd {args.dir} && pdflatex -synctex=1 -interaction=nonstopmode {args.file}")
+        os.system(f"cd {args.dir} && mv {pdf_filename} {output_filepath}")
+        os.system(f"cd {output_dir} && open {pdf_filename}")
+        print("=== FINISHED ===")
+    else:
+        print("Nothing has changed")
+    
+    time.sleep(5)

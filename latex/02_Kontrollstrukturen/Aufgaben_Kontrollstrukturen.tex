@@ -1,0 +1,90 @@
+\input{../latex-templates/head.tex}
+
+% Metainformationen
+\title{Kontrollstrukturen}
+
+\ihead{}
+\chead{}
+\ohead{}
+\ifoot{}
+\cfoot{\pagemark}
+\ofoot{}
+
+\input{../latex-templates/ownCommands.tex}
+
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0em}
+\renewcommand{\baselinestretch}{1.15}
+
+\begin{document}
+
+\docheader
+
+\section{Ping Pong! \small{(if-Verzweigungen)}}
+
+Schreiben Sie ein Programm, dass auf eine Nutzereingabe reagiert. Das Programm soll "`Pong"' ausgeben, wenn der Nutzer "`Ping"' eingegeben hat. Bei allen anderen Eingaben soll "`Falsche Eingabe"' angezeigt werden.
+
+\textit{Hinweis: Die Nutzereingabe können Sie wie folgt abfragen.}
+\vspace{1em}
+\begin{lstlisting}
+user_input = input("Eingabe bitte: ")
+\end{lstlisting}
+
+Die Lösung finden Sie in der Datei \code{1\_PingPong.py}.
+
+
+\section{Eingaben vergleichen \small{(if-Verzweigungen)}}
+
+Fordern Sie zwei Nutzereingaben an und konvertieren Sie diese jeweils in einen Integer. Überprüfen Sie, welche der Eingaben die größere Zahl war. Mögliche Ausgaben des Programms:
+
+\code{Eingabe 1 war größer} \\
+\code{Eingabe 2 war größer} \\
+\code{Die Eingaben waren identisch}
+
+Die Lösung finden Sie in der Datei \code{2\_EingabenVergleichen.py}.
+
+
+\section{Was ist die Ausgabe? \small{(if-Verzweigungen)}}
+
+\lstinputlisting{../../02_Kontrollstrukturen/3_AusgabeIf.py}
+
+Was wird dieses Programm ausgeben? Versuchen Sie die Ausgabe herauszufinden, ohne das Skript auszuführen. Um Ihr Ergebnis zu prüfen, können Sie das Programm \code{3\_AusgabeIf.py} ausführen.
+
+
+\section{Summieren wie die Sumerer \small{(Schleifen)}}
+
+Implementieren Sie ein Python-Programm, welches die folgende Summenformel berechnet:
+
+$$\sum_{x=3}^{13}(x-2)^2$$
+
+Passen Sie das Programm anschließend so an, dass der Nutzer die Unter- und Obergrenze (jeweils inklusiv) angeben kann. Dazu können Sie die \code{input}-Funktion oder die Kommandozeilenparameter verwenden. 
+
+\textit{Optional:} Wandeln Sie die \code{while}-Schleife in eine äquivalente \code{for}-Schleife um.
+
+Die Lösung finden Sie in der Datei \code{4\_Summieren.py}.
+
+
+\section{Pattern Printing \#1 \small{(Schleifen)}}
+
+Entwerfen Sie ein Python-Programm, welches das nachfolgende Muster ausgibt: 
+
+\code{1 22 333 4444 5555 ...}
+
+Die Lösung finden Sie in der Datei \code{4\_PatternPrinting1.py}.
+
+
+\section{Pattern Printing \#2 \small{(Schleifen)}}
+
+Entwerfen Sie ein Python-Programm, welches das nachfolgende Muster ausgibt: 
+
+\begin{lstlisting}
+    *
+   * *
+  *   *
+ *     *
+*       *
+\end{lstlisting}
+
+Die Lösung finden Sie in der Datei \code{5\_PatternPrinting2.py}.
+
+\end{document}
