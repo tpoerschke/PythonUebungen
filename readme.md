@@ -1,4 +1,4 @@
-# 🐍 🇩🇪 ✌️ Übungen für Python
+# 🐍 Übungen für Python 🇩🇪
 
 Ein Repository mit Übungen, die ergänzend zu einer Vorlesung oder einem Buch bearbeitet werden können.
 
