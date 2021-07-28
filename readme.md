@@ -10,7 +10,7 @@ Die Übungsaufgaben sind so angelegt, dass sie in der Komplexität zunehmen und 
 
 1) Erste Schritte
 2) Kontrollstrukturen
-3) Listen _(todo)_
+3) Listen
 4) Funktionen _(todo)_
 5) _ggf. weitere Themen_
 
