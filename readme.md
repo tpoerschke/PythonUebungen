@@ -11,7 +11,8 @@ Die Übungsaufgaben sind so angelegt, dass sie in der Komplexität zunehmen und 
 1) Erste Schritte
 2) Kontrollstrukturen
 3) Listen
-4) Funktionen _(todo)_
-5) _ggf. weitere Themen_
+4) Funktionen
+5) Algorithmen (__WIP__)
+6) _ggf. weitere Themen_
 
 In jedem Unterverzeichnis findet sich eine PDF-Datei, welche die Aufgaben enthält. Die Python-Skripte sind die Lösungen der Aufgaben und können herangezogen werden, um die eigenen Lösungen zu vergleichen.
