@@ -5,6 +5,11 @@ def request_user_input(message):
 
 def parse_list(input_str):
     return list(map(int, input_str.split(",")))
+    # Der obige Ausdruck als Schleifen-Konstrukt:
+    # int_list = []
+    # for num in input_str.split(","):
+    #     int_list.append(int(num))
+    # return int_list
 
 def parse_user_choice(input_str):
     choice = int(input_str)
@@ -16,6 +21,9 @@ def action_sum(user_list):
     return sum(user_list)
     
 def action_remove_duplicates(user_list):
+    # In einer Menge (set) kommt jedes Element
+    # genau einmal vor, so kann diese Eigenschaft
+    # hier genutzt werden, um Duplikate zu entfernen.
     return list(set(user_list))
 
 def action_find_duplicates(user_list):
@@ -27,6 +35,8 @@ def action_find_duplicates(user_list):
     return [number for number in counting_dict if counting_dict[number] > 1]
 
 def action_sort(user_list):
+    # Die eingebaute Funktion sorted
+    # gibt eine sortierte Liste zurück
     return sorted(user_list)
 
 def main():
